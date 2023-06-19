@@ -3,8 +3,8 @@
 .PHONY: test
 
 install:
-		@mkdir -p site-packages
-		pip install -r requirements.txt -t site-packages
+	@mkdir -p site-packages
+	pip install -r requirements.txt -t site-packages
 
 run:	
 	PYTHONPATH=${PYTHONPATH}:./site-packages python3 main.py
