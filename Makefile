@@ -4,7 +4,7 @@
 
 install:
 	@mkdir -p site-packages
-	pip install -r requirements.txt -t site-packages
+	pip3 install -r requirements.txt -t site-packages
 
 run:	
 	PYTHONPATH=${PYTHONPATH}:./site-packages python3 main.py
